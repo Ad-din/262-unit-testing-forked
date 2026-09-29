@@ -2,10 +2,6 @@
 
 > **Our goal is not only to find bugs, but also to build a reusable, well-structured test suite**
 
-* **Team Members:** Individual or a group of maximum 4 students. You may or may not work in your previous assignment team.
-* **Deadline:** **One week after the assignment is announced**
-
----
 
 ## Objective
 
@@ -50,9 +46,7 @@ mvn org.pitest:pitest-maven:mutationCoverage
 
 The report (`target/pit-reports/`) shows exactly which lines have surviving mutants — i.e. where your tests are too weak to notice a bug. Use it to strengthen your test suite, and **include the generated report in your submission** (see ZIP structure below).
 
-**Some students may be selected for a short **live walkthrough**: you'll be asked to explain 2–3 of your own tests — what they check and why, and what would happen if a specific line of code were subtly changed. This is straightforward if you wrote and understood your own tests.**
 
----
 
 ## What to Submit
 
@@ -84,9 +78,6 @@ pit-reports/
 **Group submissions:** submit **one ZIP per team** — one `test/` directory, one `pit-reports/` folder, and one report, shared jointly, **not one contribution appended after another**. The test suite should read as a single coherent suite, and the report should read as one team's analysis, not four separate write-ups pasted together (see report structure below — this applies section by section, not just the contribution list at the end).
 
 ---
-
-## Report Requirements (`011223445_011223446_unit_test_report.md`)
-> **DO NOT WRITE YOUR REPORT USING AI.** You may use AI tools to check grammar, spelling, or formatting, but **all content must be your own work**. Any violation will result in a score of 0 for the assignment. Share your AI conversations(prompts) if you used it to correct grammar or spelling or formatting.
 
 
 ### 0) Team members
@@ -128,13 +119,6 @@ List **each discovered defect** with a suggested fix:
 
 **Setting up the project:** You may set up your own Maven/Gradle project and PIT configuration if you're comfortable doing so. If you'd rather not deal with the setup, a working boilerplate will be shared separately — you can just write your tests inside it. Either way, your final submission must produce a mutation report when `mvn org.pitest:pitest-maven:mutationCoverage` (or your Gradle equivalent) is run.
 
----
-
-## Academic Integrity
-
-* **Any use of AI tools (ChatGPT, Claude, Copilot, or similar) at any stage of this assignment — writing tests, writing the report, drafting explanations, or anything else — is strictly prohibited and will be penalized, even if disclosed.** This applies to every part of the submission, including the report.
-* **Any other form of unfair means** (plagiarism, sharing code between teams, etc.) is also strictly prohibited.
-* **Penalty:** score **0** on this assignment **and** deduction from other assessments.
 
 ---
 
